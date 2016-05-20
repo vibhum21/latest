@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+
+label{
+font-family:sans-serif;
+display:block;
+
+padding-left: 60px;
+padding-top: 10px;
+}
+span.heading{
+font-family:cursive;
+font-style:italic;
+font-size:30px;
+padding-left: 50px;
+padding-bottom: 20px;
+width:420px;
+position: absolute;
+}
+span{
+font-size:20px;
+display:inline-block;
+width:140px;
+
+}
+
+div.wrapper{
+background-color: bisque;
+border-radius: 10px;
+padding: 20px;
+border-color: red;
+border-width: 3px;
+border-style: solid;
+width: 450px;
+height: 150px;
+margin: auto;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+h2.heading{
+
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+body
+{
+background-color: rgba(0,0,0,0,5);
+}
+input.btn {
+border: 0;
+background-color: #3bab53;
+width: 80px;
+height: 30px;
+font-size: 16px;
+color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+<span class="heading">Welcome To Book Removal</span>
+<br><br><br>
+<form method="post" action="RemoveServlet">
+<label>
+<span>Book ID :  </span><input type="text"  name="bookid" required><br><br></label>
+<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="btn" type ="submit" value="Remove">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="btn" type ="reset" value="Reset"> </label>
+</form>
+</div>
+</body>
+</html>

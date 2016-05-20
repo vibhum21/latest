@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+
+label{
+font-family:sans-serif;
+display:block;
+
+padding-left: 60px;
+padding-top: 10px;
+}
+span.heading{
+font-family:cursive;
+font-style:italic;
+font-size:30px;
+
+padding-bottom: 20px;
+width:420px;
+position: absolute;
+}
+span{
+font-size:20px;
+display:inline-block;
+width:170px;
+}
+
+div.wrapper{
+background-color: bisque;
+border-radius: 10px;
+padding: 20px;
+border-color: red;
+border-width: 3px;
+border-style: solid;
+width: 450px;
+height: 300px;
+margin: auto;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+h2.heading{
+
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+body
+{
+background-color: rgba(0,0,0,0,5);
+}
+input.btn {
+border: 0;
+background-color: #3bab53;
+width: 80px;
+height: 30px;
+font-size: 16px;
+color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+<label>
+<span class="heading">Welcome To Book Insert</span>
+</label>
+<br><br><br>
+<form method="post" action="InsertServlet">
+<label>
+<span>Book name :  </span><input type="text"  name="bname" required><br></label>
+<label>
+<span>Author Name :  </span><input type="text"  name="aname" required><br></label>
+<label>
+<span>No. of pages :  </span><input type="number" min="20" max="5000" name="npage" required><br></label>
+<label>
+<span>Edition :  </span><input type="text"  name="edition" required><br><br></label>
+<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="btn" type ="submit" value="Insert">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="btn" type ="reset" value="Reset"> </label>
+</form>
+</div>
+</body>
+</html>
